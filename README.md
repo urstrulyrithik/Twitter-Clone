@@ -1,8 +1,43 @@
-# Twitter
+# Twitter Clone Project
 
-Given an `app.js` file and a database file `twitterClone.db` consisting of five tables `user`, `follower`, `tweet`, `reply`, and `like`.
+## Overview
+This project is a Twitter Clone built using Node.js, Express.js, and SQLite. It aims to replicate key features of Twitter such as user registration, user authentication, tweeting, liking, replying, and following. This REST API handles various operations for users and their interactions with tweets.
 
-Write APIs to perform operations on the tables `user`, `follower`, `tweet`, `reply`, and `like` containing the following columns,
+## Technologies Used
+- **Backend**: Node.js, Express.js
+- **Database**: SQLite
+- **Authentication**: JWT (JSON Web Tokens)
+- **Password Security**: Bcrypt for password hashing
+
+## Features
+- **User Registration and Authentication**: Users can register with unique usernames and login securely.
+- **Tweeting**: Users can post tweets, view their feed, and delete their own tweets.
+- **Follow System**: Users can follow other users, view the list of their followers, and also the users they are following.
+- **Tweet Interactions**: Users can like and reply to tweets, view who liked a tweet, and read replies.
+
+## Installation
+To run the project locally:
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd twitter-clone-project
+   ```
+
+2. Install the required dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the server:
+   ```bash
+   node index.js
+   ```
+
+4. The server will be running on `http://localhost:3000/`.
+
+## Database
+- **Schema**: The database `twitterClone.db` consists of tables for `user`, `tweet`, `like`, and `reply`.
+- The database file should be placed in the root folder where the Node.js server script (`index.js`) is located.
 
 **User Table**
 
@@ -532,3 +567,25 @@ Use `npm install` to install the packages.
 **Export the express instance using the default export syntax.**
 
 **Use Common JS module syntax.**
+
+## Notes
+- Passwords are hashed before storing in the database using `bcrypt` to ensure security.
+- JWT is used to ensure secure authentication for endpoints that require user verification.
+- SQLite is used as a simple relational database solution for handling data.
+
+## Improvements and Future Scope
+- **UI Development**: Building a front-end interface for better user interaction.
+- **Error Handling**: Improving the robustness of the error-handling mechanisms.
+- **Notifications**: Adding a feature to notify users about new followers, likes, or replies.
+
+## Contributing
+Feel free to fork the repository and submit pull requests for adding new features or fixing issues.
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+For further questions or support, reach out at:
+- **Email**: urstrulyrithik@gmail.com
+- **LinkedIn**: [Rithik Reddy](https://www.linkedin.com/in/rithikreddypv)
+- **GitHub**: [rithikreddy](https://github.com/urstrulyrithik)
